@@ -1,4 +1,4 @@
-﻿namespace StringAlgorithms
+﻿namespace DynamicProgramming
 {
     public class LongestPalindrome
     {

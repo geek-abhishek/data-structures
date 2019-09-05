@@ -1,4 +1,4 @@
-﻿namespace StringAlgorithms.Test
+﻿namespace DynamicProgramming.Test
 {
     using Xunit;
     using FluentAssertions;
