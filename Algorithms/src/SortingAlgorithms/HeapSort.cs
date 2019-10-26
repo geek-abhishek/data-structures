@@ -1,13 +1,20 @@
 ﻿namespace SortingAlgorithms
 {
+    using System;
+
     public class HeapSort : ISort
     {
         public int[] ArrangeInAscending(int[] numbers)
         {
-            var maxHeapOfNumbers = GetMaxHeap(numbers);
-            var sortedElements = GetAscendingArrangedElements(maxHeapOfNumbers);
+            var maxHeap = GetMaxHeap(numbers);
+            var sortedNumbers = GetAscendingArrangedElements(maxHeap);
 
-            return maxHeapOfNumbers;
+            return RemoveElement(sortedNumbers, 0);
+        }
+
+        public int[] ArrangeInDescending(int[] numbers)
+        {
+            throw new NotImplementedException();
         }
 
         private int[] GetMaxHeap(int[] numbers)
@@ -85,6 +92,24 @@
             var temp = maxHeap[leftIndex];
             maxHeap[leftIndex] = maxHeap[rightIndex];
             maxHeap[rightIndex] = temp;
+        }
+
+        private int[] RemoveElement(int[] numbers, int indexToRemove)
+        {
+            var newNumbers = new int[numbers.Length - 1];
+            var newNumbersIndex = 0;
+
+            for (var i = 0; i < numbers.Length; i++)
+            {
+                if (i.Equals(indexToRemove))
+                {
+                    continue;
+                }
+
+                newNumbers[newNumbersIndex++] = numbers[i];
+            }
+
+            return newNumbers;
         }
     }
 }
