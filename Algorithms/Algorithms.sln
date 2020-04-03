@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingAlgorithms.Test", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "src\DataStructures\DataStructures.csproj", "{0E5E99F6-2655-4061-9CB7-AA6A30A17516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Test", "test\DataStructures.Test\DataStructures.Test.csproj", "{FA1ABB59-3668-4FB9-9248-0DCAEBFB5F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures.Test", "test\DataStructures.Test\DataStructures.Test.csproj", "{FA1ABB59-3668-4FB9-9248-0DCAEBFB5F0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
