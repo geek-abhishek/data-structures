@@ -25,13 +25,8 @@
 
             for (int i = 1; i < nums.Length; i++)
             {
-                for (int j = 0; j <= i; j++)
+                for (int j = 0; j < i; j++)
                 {
-                    if (j == i)
-                    {
-                        break;
-                    }
-
                     if (nums[j] < nums[i])
                     {
                         lengths[i] = Math.Max(lengths[i], lengths[j] + 1);

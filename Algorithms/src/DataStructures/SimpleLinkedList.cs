@@ -49,7 +49,6 @@
                 
                 currentNode.Next = previousNode;
                 previousNode = currentNode;
-                
                 currentNode = nextNode;
             }
 
